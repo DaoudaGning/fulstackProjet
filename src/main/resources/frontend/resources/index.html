@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Location Immobilière</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gestion de Location Immobilière</h1>
+    </header>
+
+    <main>
+        <section id="ajouter-appartement">
+            <h2>Ajouter un Appartement</h2>
+            <form id="ajout-appartement-form">
+                <h2>Ajouter un Appartement</h2>
+                <label for="adresse">Adresse :</label>
+                <input type="text" id="adresse" name="adresse" required><br>
+            
+                <label for="nombreDeChambres">Nombre de Chambres :</label>
+                <input type="number" id="nombreDeChambres" name="nombreDeChambres" required><br>
+            
+                <label for="nombreDeSallesDeBain">Nombre de Salles de Bain :</label>
+                <input type="number" id="nombreDeSallesDeBain" name="nombreDeSallesDeBain" required><br>
+            
+                <label for="nombreDeSalons">Nombre de Salons :</label>
+                <input type="number" id="nombreDeSalons" name="nombreDeSalons" required><br>
+            
+                <label for="cuisineEquipee">Cuisine Équipée :</label>
+                <input type="checkbox" id="cuisineEquipee" name="cuisineEquipee"><br>
+            
+                <label for="autresCommodites">Autres Commodités :</label>
+                <input type="text" id="autresCommodites" name="autresCommodites"><br>
+            
+                <button type="submit">Ajouter Appartement</button>
+            </form>
+            
+        </section>
+
+        <section id="liste-appartements">
+            <h2>Liste des Appartements</h2>
+            <ul id="appartement-list">
+                <!-- Les appartements seront affichés ici -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
