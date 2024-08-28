@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const formulaire = document.getElementById('ajout-appartement-form');
     const appartementList = document.getElementById('appartement-list');
-
-    // Soumettre le formulaire pour ajouter un appartement
     formulaire.addEventListener('submit', async (e) => {
         e.preventDefault();
         const data = {
@@ -23,13 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 body: JSON.stringify(data),
             });
             if (response.ok) {
-                afficherAppartements(); // Recharger la liste des appartements
+                afficherAppartements();
             }
         } catch (error) {
             console.error('Erreur lors de l\'ajout:', error);
         }
     });
-
-    // Charger et afficher les appartements existants
     afficherAppartements();
 });
