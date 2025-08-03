@@ -3,17 +3,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'Hello UADB'
-            }
-        }
-        stage('Test') {
-            steps {
-                //
-            }
-        }
-        stage('Deploy') {
-            steps {
-                //
+                script {
+                    sh 'Hello UADB'
+                }
             }
         }
     }
