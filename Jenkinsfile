@@ -8,5 +8,13 @@ pipeline {
                 }
             }
         }
+        stage('Docker build tag') {
+            steps {
+                script {
+                    sh 'docker tag uadb:v1 gning26/uadb:v1'
+                    sh 'docker images'
+                }
+            }
+        }
     }
 }
