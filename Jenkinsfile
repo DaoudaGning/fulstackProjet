@@ -12,7 +12,13 @@ pipeline {
             steps {
                 script {
                     sh 'docker tag uadb:v1 gning26/uadb:v1'
-                    sh 'docker images'
+                }
+            }
+        }
+        stage('Docker push image') {
+            steps {
+                script {
+                    sh 'docker push gning26/uadb:v1'
                 }
             }
         }
